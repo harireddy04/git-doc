@@ -1,0 +1,73 @@
+GIT INSTALL,
+
+apt-get install git //Ubuntu OS//
+dnf install git-all //RedHat/CentOS, enable the EPEL repository//
+yum install git  //RedHat/CentOS// 
+brew install git  //Mac OS//
+
+GIT CONFIG,
+  tell to git who you are,and default configuration
+
+git config --global user.name "Hari Reddy"  //Configure the author name//
+git config --global user.email "my-email.id@gmail.com"  //Configure the author email id//
+git config --global core.editor "vim"  //Configure the author favourite (vim, vi, atom, sublime, emacs, nano) editor//
+git config --list  //Checking Your Settings //
+
+GIT HELP
+git help <options>
+man git 
+
+
+GIT Local repository,
+
+git init  //go to your present working directory and Initialize a local Git repository //
+git clone https://github.com/harireddy04/git-doc.git  //Create a local copy of a remote repository with https access//
+git clone git@github.com:harireddy04/git-doc.git //Create a local copy of a remote repository with SSH access// 
+
+
+GIT BASIC SNAPSHOT,
+
+git status  //check status//
+git status -s
+git add <filename>  //Add a file to staging area//
+git add -A . //Add all new and changed files to the staging area//
+git commit -m "relavent commit message"  //Commit changes//
+git commit --amend  //If you want to redo that commit, make the additional changes you forgot, stage them, and commit again //
+git rm -r <file name>  //Remove a file or directory/folder//
+git diff <source branch files> <target branch files>  //Show changes between commits, commit and working tree//
+git diff --staged
+git diff --cached
+git mv old_filename new_filename  //Move or rename a file, a directory, or a symlink// 
+$cat .gitignore  // update the files in .gitignore//
+git reset --hard origin/master  //It’s true that git reset can be a dangerous command, especially if you provide the --hard flag//
+
+GIT INSPECTION AND COMPARISON,
+git log  //view changes//
+git log --summary //view changes in detailed//
+git log --pretty=oneline  //The oneline option prints each commit on a single line, which is useful if you’re looking at a lot of commits//
+git diff <source branch files> <target branch files>  //Show changes between commits, commit and working tree//
+git diff --staged
+git diff --cached
+
+GIT REMOTE,
+
+git remote -v  // which shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote//
+git remote add hari1 https://github.com/harireddy04/git-docs1 //Adding Remote Repositories//  //Adding Remote Repositories//
+git fetch hari1
+
+GIT BRANCHING & MERGING
+
+git branch  //List branches//
+git branch -a  //List all branches (local and remote)//
+git branch <new_branch_name>  //Create a new branch//
+git branch -d <branch_name>  //Delete a branch//
+git push origin --delete branch_name  //Delete a remote branch//
+git checkout -b branch_name  //Create a new branch and switch to it//
+git checkout branch_name  //Switch to a branch//
+git checkout -  //Switch to the branch last checked out//
+git merge branch_name  //Merge a branch into the active branch//
+git merge source_branch_name target_branch_name  //Merge a branch into a target branch//
+git stash  //Stash changes in a dirty working directory//
+git stash clear  //Remove all stashed entries//
+
+

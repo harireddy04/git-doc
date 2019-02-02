@@ -1,0 +1,15 @@
+GIT BRANCHING & MERGING
+
+git branch  //List branches//
+git branch -a  //List all branches (local and remote)//
+git branch <new_branch_name>  //Create a new branch//
+git branch -d <branch_name>  //Delete a branch//
+git push origin --delete branch_name  //Delete a remote branch//
+git checkout -b branch_name  //Create a new branch and switch to it//
+git checkout branch_name  //Switch to a branch//
+git checkout -  //Switch to the branch last checked out//
+git merge branch_name  //Merge a branch into the active branch//
+git merge source_branch_name target_branch_name  //Merge a branch into a target branch//
+git stash  //Stash changes in a dirty working directory//
+git stash clear  //Remove all stashed entries//
+
