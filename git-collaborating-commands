@@ -4,4 +4,4 @@ git push origin --delete branch_name  //Delete a remote branch//
 git pull  //Update local repository to the newest commit//
 git pull origin branch_name //Pull changes from remote repository//
 git remote add origin https://github.com/harireddy04/git-docs12.git   //Add a remote repository//
-
+git push
